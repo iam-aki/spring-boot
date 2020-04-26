@@ -1,6 +1,12 @@
 spring:
   session:
     timeout: 1m
+    jdbc:
+      table-name: SESSION
+  data:
+    mongodb:
+      ##Change this to the Mongo Connection URI
+      uri: mongodb://localhost/test
 
 server:
   port: 8081
